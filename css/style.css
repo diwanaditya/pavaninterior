@@ -85,7 +85,7 @@ body {
   position: absolute;
   inset: 0;
 
-  background-image: url("../assets/images/hero/hero1.jpg");
+  background-image: url("assets/images/hero/hero1.jpg");
 
   background-size: cover;
   background-position: center;
@@ -183,7 +183,7 @@ body {
   justify-content: center;
   padding: 140px 20px 60px;
 
-  background-image: url("../assets/images/consultation/consultation-bg.jpg");
+  background-image: url("assets/images/consultation/consultation-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@ body {
   position: relative;
 
   /* 🔽 BACKGROUND IMAGE LOCATION (YOU WILL SET IMAGE HERE) */
-  background-image: url("../assets/images/Intro/intro.jpg");
+  background-image: url("assets/images/Intro/intro.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -439,13 +439,13 @@ body {
   min-height: 100vh;
   padding: 160px 20px 80px;
 
-  /* Background image with refined dark overlay */
+  
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../assets/images/team/team.jpg");
+    url("assets/images/team/team.jpg");
 
   background-size: cover;
   background-position: center;

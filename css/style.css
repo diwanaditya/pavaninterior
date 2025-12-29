@@ -1623,3 +1623,35 @@ body {
     font-size: 11px;
   }
 }
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0,0,0,0.95);
+  padding: 18px 22px;
+  border-radius: 16px;
+  display: none;
+  min-width: 260px;
+  z-index: 9999;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+  color: #9bd0b2;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}

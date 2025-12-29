@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>3D Interior Design & Visualization Services | Pavan Interior Design Ahmedabad</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional 3D interior design & visualization services in Ahmedabad. Experience realistic 3D views, editable designs, and precision planning before execution.">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ================= BASE ================= */
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Playfair Display",serif;
+  background:#f8f8f6;
+  color:#1a1a1a;
+}
+
+/* ================= HEADER ================= */
+header{
+  padding:26px 20px;
+  text-align:center;
+}
+header img{
+  height:80px;
+}
+
+/* ================= HERO ================= */
+.hero{
+  padding:100px 20px 80px;
+  background:#ffffff;
+  text-align:center;
+}
+.hero h1{
+  font-size:42px;
+  margin-bottom:16px;
+}
+.hero p{
+  font-size:18px;
+  max-width:800px;
+  margin:auto;
+  color:#555;
+  line-height:1.8;
+}
+
+/* ================= CONTENT ================= */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.section{
+  margin-bottom:80px;
+}
+
+.section h2{
+  font-size:34px;
+  margin-bottom:20px;
+}
+.section p{
+  font-size:16px;
+  line-height:1.9;
+  color:#444;
+  max-width:900px;
+}
+
+/* ================= PROCESS ================= */
+.process{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+.process-box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+.process-box h4{
+  font-size:18px;
+  margin-bottom:10px;
+}
+.process-box p{
+  font-size:14px;
+  color:#555;
+  line-height:1.7;
+}
+
+/* ================= IMAGE GRID ================= */
+.image-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:40px;
+}
+.image-box{
+  height:260px;
+  background:#ddd;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  color:#666;
+}
+
+/* ================= WHY US ================= */
+.why{
+  background:#ffffff;
+  padding:70px;
+  border-radius:22px;
+}
+.why ul{
+  list-style:none;
+}
+.why li{
+  font-size:16px;
+  line-height:1.8;
+  margin-bottom:14px;
+  padding-left:20px;
+  position:relative;
+}
+.why li::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  color:#9bd0b2;
+  font-size:20px;
+}
+
+/* ================= CTA ================= */
+.cta{
+  background:#1a1a1a;
+  color:#ffffff;
+  padding:70px 20px;
+  text-align:center;
+}
+.cta h3{
+  font-size:32px;
+  margin-bottom:16px;
+}
+.cta p{
+  font-size:17px;
+  max-width:700px;
+  margin:auto;
+  opacity:0.9;
+}
+.cta a{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 34px;
+  border:1px solid #ffffff;
+  color:#ffffff;
+  text-decoration:none;
+  letter-spacing:1px;
+}
+.cta a:hover{
+  background:#ffffff;
+  color:#000;
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+  background: #0e0e0e;
+  color: #eaeaea;
+  padding: 80px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 60px;
+}
+
+.footer-brand img {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #bdbdbd;
+}
+
+.footer-social a {
+  display:inline-block;
+  margin-right:15px;
+  color:#9bd0b2;
+  text-decoration:none;
+}
+
+.footer-col h4 {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.footer-col a {
+  display:block;
+  color:#bdbdbd;
+  text-decoration:none;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.footer-locations {
+  margin:50px auto 20px;
+  padding:18px;
+  background:#1a1a1a;
+  text-align:center;
+  border-radius:10px;
+  font-size:14px;
+}
+
+.footer-bottom {
+  text-align:center;
+  font-size:13px;
+  color:#888;
+  margin-top:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .process{grid-template-columns:1fr 1fr}
+  .image-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .hero h1{font-size:30px}
+  .process{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="../index.html">
+    <img src="../assets/images/logo/logo.png" alt="Pavan Interior Design">
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>3D Interior Design & Visualization</h1>
+  <p>
+    Experience your space before it is built. Our advanced 3D interior design
+    and visualization services help you see, modify, and perfect every detail
+    before execution begins.
+  </p>
+</section>
+
+<!-- INTRO -->
+<section class="container section">
+  <h2>Why 3D Design Matters in Interior Projects</h2>
+  <p>
+    3D interior visualization is the foundation of accurate interior planning.
+    It eliminates assumptions, reduces execution errors, and ensures complete
+    alignment between client expectations and final output. At Pavan Interior
+    Design, we specialize in hyper-realistic 3D designs that reflect real
+    materials, lighting, proportions, and spatial flow.
+  </p>
+</section>
+
+<!-- PROCESS -->
+<section class="container section">
+  <h2>Our 3D Design Process</h2>
+
+  <div class="process">
+    <div class="process-box">
+      <h4>01. Requirement Understanding</h4>
+      <p>
+        We study your layout, lifestyle, budget, and design preferences in detail
+        before starting any visual work.
+      </p>
+    </div>
+
+    <div class="process-box">
+      <h4>02. Space Planning & Concepts</h4>
+      <p>
+        Furniture layouts, zoning, circulation paths, and functional planning
+        are finalized before rendering.
+      </p>
+    </div>
+
+    <div class="process-box">
+      <h4>03. Photorealistic 3D Views</h4>
+      <p>
+        High-quality 3D renders with accurate lighting, textures, materials, and
+        depth perception.
+      </p>
+    </div>
+
+    <div class="process-box">
+      <h4>04. Revisions & Finalization</h4>
+      <p>
+        Unlimited minor edits until you are fully satisfied and confident to move
+        into execution.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE SHOWCASE -->
+<section class="container section">
+  <h2>Sample 3D Visualizations</h2>
+
+  <div class="image-grid">
+    <div class="image-box">Living Room 3D View</div>
+    <div class="image-box">Kitchen 3D View</div>
+    <div class="image-box">Bedroom 3D View</div>
+    <div class="image-box">Office Space 3D View</div>
+    <div class="image-box">Lighting & Ceiling Design</div>
+    <div class="image-box">Material & Finish Preview</div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="container section">
+  <div class="why">
+    <h2>Why Clients Trust Our 3D Design Expertise</h2>
+    <ul>
+      <li>Highly experienced 3D designers with execution knowledge</li>
+      <li>Realistic textures, lighting, and scale accuracy</li>
+      <li>Editable designs based on your comfort and feedback</li>
+      <li>Clear material and color visualization before purchase</li>
+      <li>Reduced execution changes and cost overruns</li>
+      <li>Seamless transition from 3D to turnkey execution</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h3>Visualize Before You Build</h3>
+  <p>
+    Get professional 3D interior designs that give you clarity, confidence,
+    and complete control over your interior decisions.
+  </p>
+  <a href="../book-consultation.html">Request 3D Design Consultation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <img src="../assets/images/logo/logo.png" alt="Pavan Interior Design">
+      <p>
+        Crafting timeless interiors with precision, transparency, and design
+        excellence across residential and commercial spaces.
+      </p>
+      <div class="footer-social">
+        <a href="https://wa.me/918980531520">WhatsApp</a>
+        <a href="mailto:info@pavaninterior.com">Email</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="../index.html">Home</a>
+      <a href="../folders/work.html">Work</a>
+      <a href="../about.html">About</a>
+      <a href="../folders/pricing.html">Pricing</a>
+      <a href="../book-consultation.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="home-interior.html">Home Interior</a>
+      <a href="kitchen.html">Modular Kitchen</a>
+      <a href="office-interior-design.html">Office Interior</a>
+      <a href="architecture-consulting.html">Architecture Consulting</a>
+      <a href="turnkey-solution.html">Turnkey Solutions</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <p>+91 89805 31520</p>
+      <p>info@pavaninterior.com</p>
+      <p>
+        202, Aaron Spectra, Rajpath Rangoli Rd,<br>
+        Near Rajpath Club, Bodakdev,<br>
+        Ahmedabad, Gujarat 380054
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-locations">
+    Ahmedabad · Gandhinagar · Rajkot · Surat · Vadodara · Pune · Hyderabad · Bangalore · Thane · Goregaon East
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Pavan Interior Design. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>

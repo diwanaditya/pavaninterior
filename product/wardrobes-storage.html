@@ -111,24 +111,52 @@ header img{
   line-height:1.7;
 }
 
-/* IMAGE GRID */
+/* ================= IMAGE GRID (FIXED) ================= */
 .image-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-  margin-top:30px;
-}
-.image-box{
-  height:260px;
-  background:#ddd;
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:14px;
-  color:#666;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
 }
 
+.image-box{
+  width: 100%;
+  height: 260px;
+  border-radius: 14px;
+  overflow: hidden;              
+  background: #f1f1f1;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             
+  display: block;
+}
+
+/* Premium hover */
+.image-box:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.16);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .image-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px){
+  .image-grid{
+    grid-template-columns: 1fr;
+  }
+  .image-box{
+    height: 220px;
+  }
+}
 /* MATERIALS */
 .materials{
   background:#ffffff;
@@ -349,12 +377,29 @@ header img{
   <h2>Wardrobe & Storage Projects</h2>
 
   <div class="image-grid">
-    <div class="image-box">Modular Wardrobe Design</div>
-    <div class="image-box">Walk-In Closet</div>
-    <div class="image-box">Sliding Door Wardrobe</div>
-    <div class="image-box">Bedroom Storage Unit</div>
-    <div class="image-box">Loft Storage Solution</div>
-    <div class="image-box">Open Storage Display</div>
+    <div class="image-box">
+      <img src="../assets/images/wardrobes/modular-wardrobe-design.jpg" alt="Modular Wardrobe Design">
+    </div>
+
+    <div class="image-box">
+      <img src="../assets/images/wardrobes/walk-in-closet.jpg" alt="Walk-in Closet Design">
+    </div>
+
+    <div class="image-box">
+      <img src="../assets/images/wardrobes/sliding-door-wardrobe.jpg" alt="Sliding Door Wardrobe">
+    </div>
+
+    <div class="image-box">
+      <img src="../assets/images/wardrobes/bedroom-storage-unit.jpg" alt="Bedroom Storage Unit">
+    </div>
+
+    <div class="image-box">
+      <img src="../assets/images/wardrobes/loft-storage-solution.jpg" alt="Loft Storage Solution">
+    </div>
+
+    <div class="image-box">
+      <img src="../assets/images/wardrobes/open-storage-display.jpg" alt="Open Storage Display Unit">
+    </div>
   </div>
 </section>
 
@@ -440,3 +485,4 @@ header img{
 
 </body>
 </html>
+

@@ -149,39 +149,58 @@
 </section>
 
 <!-- ================= WHY CHOOSE US ================= -->
-<!-- ================= WHY CHOOSE US ================= -->
+<!-- ================= WHY CHOOSE US (IMAGE SLIDER) ================= -->
 <section class="why-section">
+
   <div class="why-title">
     <h2>Why Choose Pavan Interior Design in Ahmedabad?</h2>
     <p>Interior solutions built on experience, transparency, and thoughtful execution.</p>
   </div>
 
-  <!-- SLIDER WRAPPER -->
   <div class="why-slider-wrapper">
-
-    <!-- SLIDER TRACK -->
     <div class="why-slider">
 
-      <div class="why-card"><h4>Affordable & Transparent Pricing</h4><p>Well-planned interior solutions that deliver value without hidden costs.</p></div>
-      <div class="why-card"><h4>Experienced Design Professionals</h4><p>A skilled team focused on creating balanced, functional, and elegant spaces.</p></div>
-      <div class="why-card"><h4>Tailor-Made Design Concepts</h4><p>Every project is customised to suit your lifestyle, taste, and requirements.</p></div>
-      <div class="why-card"><h4>End-to-End Interior Services</h4><p>Complete interior execution from planning and design to final handover.</p></div>
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu1.png" alt="Why Choose Us 1">
+      </div>
 
-      <div class="why-card"><h4>Turnkey Project Execution</h4><p>Single-point responsibility ensuring smooth coordination and timely delivery.</p></div>
-      <div class="why-card"><h4>Residential & Commercial Expertise</h4><p>Homes, apartments, offices, and functional commercial interiors.</p></div>
-      <div class="why-card"><h4>Material & Brand Transparency</h4><p>Clear communication on materials, finishes, and product selections.</p></div>
-      <div class="why-card"><h4>Dedicated On-Site Supervision</h4><p>Quality control through regular monitoring and execution checks.</p></div>
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu2.png" alt="Why Choose Us 2">
+      </div>
 
-      <div class="why-card"><h4>Pan-India Project Capability</h4><p>Ability to manage and execute projects across multiple locations.</p></div>
-      <div class="why-card"><h4>Reliable Vendor Network</h4><p>Strong partnerships with trusted suppliers and skilled craftsmen.</p></div>
-      <div class="why-card"><h4>Design Meets Practicality</h4><p>Thoughtful layouts that balance visual appeal and everyday usability.</p></div>
-      <div class="why-card"><h4>Client-First Approach</h4><p>Every decision is guided by client needs, comfort, and long-term value.</p></div>
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu3.png" alt="Why Choose Us 3">
+      </div>
+
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu4.png" alt="Why Choose Us 4">
+      </div>
+
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu5.png" alt="Why Choose Us 5">
+      </div>
+
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu6.png" alt="Why Choose Us 6">
+      </div>
+
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu7.png" alt="Why Choose Us 7">
+      </div>
+
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu8.png" alt="Why Choose Us 8">
+      </div>
+
+      <div class="why-card">
+        <img src="assets/images/why-choose-us/wcu9.png" alt="Why Choose Us 9">
+      </div>
 
     </div>
   </div>
 
-  <!-- DOT NAVIGATION -->
   <div class="why-dots"></div>
+
 </section>
 <!-- ================= PROJECT PREVIEW ================= -->
 <section class="preview-section">
@@ -644,7 +663,47 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 </script>
 
+<script>
+const slider = document.querySelector(".why-slider");
+const cards = document.querySelectorAll(".why-card");
+const dotsContainer = document.querySelector(".why-dots");
 
+let index = 0;
+let cardsPerView = window.innerWidth <= 768 ? 1 : 4;
+const totalSlides = Math.ceil(cards.length / cardsPerView);
+
+/* Create dots */
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement("span");
+  if (i === 0) dot.classList.add("active");
+  dot.addEventListener("click", () => moveToSlide(i));
+  dotsContainer.appendChild(dot);
+}
+
+function updateDots() {
+  document.querySelectorAll(".why-dots span").forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+}
+
+function moveToSlide(i) {
+  index = i;
+  const slideWidth = slider.clientWidth;
+  slider.style.transform = `translateX(-${slideWidth * index}px)`;
+  updateDots();
+}
+
+function autoSlide() {
+  index = (index + 1) % totalSlides;
+  moveToSlide(index);
+}
+
+setInterval(autoSlide, 3500);
+
+window.addEventListener("resize", () => {
+  cardsPerView = window.innerWidth <= 768 ? 1 : 4;
+});
+</script>
 
 <div class="quick-contact">
   <a href="tel:+‪916355549788‬" class="qc-btn qc-call" aria-label="Call">

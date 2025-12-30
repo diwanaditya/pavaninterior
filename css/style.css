@@ -9,10 +9,8 @@
 body {
   font-family: "Playfair Display", serif;
 
-  /* Clean luxury paper background */
+  
   background: #f9f9f7;
-
-  /* Default readable text color */
   color: #1a1a1a;
 
   line-height: 1.6;
@@ -26,10 +24,9 @@ body {
   z-index: 10;
 }
 
-/* THIS IS THE FIX */
 .header-inner {
-  max-width: 1300px;        /* controls how far menus go */
-  margin: 0 auto;           /* centers everything */
+  max-width: 1300px;        
+  margin: 0 auto;           
   padding: 30px 20px;
 
   display: grid;
@@ -1241,7 +1238,7 @@ body {
 /* LUXURY HEADER ALIGNMENT */
 .luxury-align {
   max-width: 620px;
-  margin-left: 600px;        /* pushes to right */
+  margin-left: 600px;        
   margin-right: 120px;
   text-align: left;
   padding-right: 40px;
